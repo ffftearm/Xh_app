@@ -1,0 +1,28 @@
+//app默认颜色
+@defaultColor:#61c1be;
+//header
+@headerBg:@defaultColor;
+@headerDefaultColor:rgb(255,255,255);
+@headerTop:44px;
+@headerBot:43px;
+//基础背景色
+@baseBg:#fff;
+//tabbar
+@tabbarActiveColor:@defaultColor;
+//table
+@tableHeadBg:#ff7c82;
+//省略号
+.ellipsis(@line) {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @line;
+    overflow: hidden;
+}
+//@清除浮动
+.clear() {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
